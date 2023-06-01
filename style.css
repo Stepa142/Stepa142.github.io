@@ -1,0 +1,169 @@
+/* fonty */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;700&display=swap');
+
+/* globální nastavení */
+* {box-sizing: border-box;}
+
+body, ul {
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito', sans-serif;
+  background-color: rgb(27, 27, 171);
+}
+
+/* navigace */
+nav {
+  background-color: rgb(27, 27, 171);
+  padding: 12px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+nav div {
+  max-width: 1000px;
+  margin: auto;
+  background-color: rgb(27, 27, 171);
+}
+
+nav li {
+  display: inline-block;
+  font-size: 20px;
+  background-color: rgb(27, 27, 171);
+}
+
+nav li a {
+  color: gold;
+  text-decoration: none;
+  padding-right: 12px;
+  background-color: rgb(27, 27, 171);
+}
+#logo{
+    position: sticky;
+    width: 500;
+}
+/* hlavička */
+
+header {
+  position: relative;
+  height: 300px;
+  background-color: blue;
+}
+
+header > h1 {
+  font-family: 'Fredoka One', cursive;
+  font-size: 120px;
+  position: absolute;
+  color: gold;
+  left: 400px;
+  top: 30px;
+}
+
+#ctverec {
+  font-size: 170px;
+  position: absolute;
+  color: gold;
+  right: 1000x;
+}
+
+#kolo {
+  font-size: 200x;
+  position: absolute;
+  color: gold;
+  left: 100px;
+}
+
+#troj {
+  font-size: 200px;
+  position: absolute;
+  color: gold;
+  left: 100;
+}
+
+/* obsah */
+
+main {
+  font-size: 40px;
+  max-width: 1000px;
+  margin: auto;
+  background-color: blue;
+  color:gold;
+}
+#kocky{
+    display: flex;
+    background-image:url(./images/ikkk.jpg);
+    background-size: cover;
+}
+
+#moje-kocka{
+    display: flex;
+    background-image: url(./images/images.jpg);
+    background-size: cover;
+}
+
+#galerie{
+    display: flex;
+    background-image: url(./images/stažený\ soubor.jpg);
+    background-size: cover;
+}
+#text{
+    max-width: 75%;
+    min-width: 67%;
+    padding: 40px;
+}
+
+#ikea{
+    min-width: 33%;
+    max-width: 25%;
+}
+/* patička */
+footer {
+  background-color: blue;
+  text-align: center;
+  color:gold;
+}
+#email{
+  resize: none;
+}
+@media only screen and (max-width:600px) {
+    nav {
+      display: flex;
+      justify-content: space-between;
+    }
+    header{
+        left: 0px;
+        margin-left: 16%;
+        margin-right: 16%;
+    }
+    #titul{
+        left: 0px;
+        margin-left: 16%;
+        margin-right: 16%;
+        color: black;
+    }
+    main {
+        font-size: 20px;
+        max-width: 1000px;
+        margin-left: 16%;
+        margin-right: 16%;
+        background-color: blue;
+        color:gold;
+      }
+      #kocky{
+        margin: auto;
+        position: relative;
+    }
+    
+    #moje-kocka{
+        margin: auto;
+        position: relative;
+    }
+    
+    #galerie{
+        margin: auto;
+        position: relative;
+    }
+    #text{
+        margin-top: 120px;
+    }
+}
